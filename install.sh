@@ -31,6 +31,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     export MACOSX_DEPLOYMENT_TARGET=10.15
     brew install cmake || true
 fi
+
+cd $DIR
+
 python setup.py build
 python setup.py install
 
