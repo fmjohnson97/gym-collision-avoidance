@@ -275,11 +275,11 @@ class NN_jackal():
         self.num_actions_computed += 1.0
         feasible_actions = copy.deepcopy(self.feasible_actions)
         if self.operation_mode.mode!=self.operation_mode.NN:
-            print 'Not in NN mode'
+            print('Not in NN mode')
             return
         if len(feasible_actions.angles) == 0 \
             or len(feasible_actions.path_lengths)==0:
-            print 'Invalid Feasible Actions'
+            print('Invalid Feasible Actions')
             # print feasible_actions
             return
 

@@ -109,7 +109,7 @@ def compute_trajs_stats(trajs_multi):
 		# print traj[2].shape
 		# print 'traj_number', i, len(traj), len(traj[0]), len(traj[1])
 		if len(traj[0]) == 0:
-			print i, traj
+			print(i, traj)
 		time_to_reach_goal, traj_lengths, min_sepDist, \
 			if_completed_vec = pedData.computeStats(traj)
 		traj_stats.append([time_to_reach_goal, traj_lengths, \

@@ -200,7 +200,7 @@ def stress_test_case(nn_rl, num_run, test_case=None, figure_name_str=None):
 				if True: #if_collided_tmp and True: #(if_collided or if_no_improvement_1 or if_no_improvement_2):
 					print('------ stress_test_case() in nn_debug.py')
 					for k in xrange(num_agents):
-						print '%dth agent' % k
+						print('%dth agent' % k)
 						agent_state = agents_state[k]
 						filtered_others_state = [agents_state[tt].copy() for tt in xrange(num_agents)]
 						for tt in xrange(num_agents):

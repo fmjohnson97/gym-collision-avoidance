@@ -72,7 +72,7 @@ def computeStats(traj_raw_multi):
 				try:
 					assert(pref_speed>0.05)
 				except:
-					print traj_raw_multi[i+1][0,:]
+					print(traj_raw_multi[i+1][0,:])
 					assert(0)
 				leftover_time = leftover_dist / pref_speed
 				
